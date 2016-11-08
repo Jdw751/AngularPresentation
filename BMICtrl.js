@@ -1,1 +1,1 @@
-var bmi = angular.module('BMIApp', []);
+var bmi = angular.module('BMIApp');

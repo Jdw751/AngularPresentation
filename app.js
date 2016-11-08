@@ -3,9 +3,11 @@ var bodyMassIndex = angular.module('BMIApp',[]);
 var toDo = angular.module('ToDoApp',[]);
 var budget = angular.module('BudgetApp');
 
+
+
 app.config(function($routeProvider) {
 	$routeProvider
-	.when("/Home", {
+	.when("/", {
 		templateUrl: "index.html",
 		controller: ""
 	})
