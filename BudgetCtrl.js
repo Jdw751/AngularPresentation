@@ -1,0 +1,1 @@
+var budget = angular.module('BudgetApp', []);
