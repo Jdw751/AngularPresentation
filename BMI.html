@@ -1,13 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+
 <div class="container">
 	<div class="well">
 		<form class='form-inline' ng-submit=''>
 			<div class='row'>
 				<div class='col-md-4'>
-					
+					<h2><label><span class="glyphicon glyphicon-heart"></span>BMI</label></h2>
+
+
 				</div>
+				<div class='col-md-4'>
+					<!-- <form> -->
+						Scale:
+						<input type="radio" ng-model="scale" value="metric" checked>Metric
+						<input type="radio" ng-model="scale" value="imperial">Imperial
+
+					<!-- </form> -->
+
+				</div>
+
+			</div>
+			<div class='row'>
+				<div ng-switch="scale">
+					<div ng-switch-when="metric">
+						Meters:
+						<input type="number" ng-model="heightMeters">m
+
+
+					</div>
+				</div>
+				
+					<div ng-switch-when="imperial">
+						Feet:
+						<input type="number" ng-model="heightFeet">ft
+						Inches:
+						<input type="number" ng-model="heightInches">in
+
+					</div>
+				
 			</div>
 		</form>
 	</div>
 
 
 </div>
+</html>
