@@ -1,7 +1,7 @@
 var toDo = angular.module('ToDoApp',[]);
 
 
-	toDo.controller('ToDoCtrl', function ($scope){
+toDo.controller('ToDoCtrl', function ($scope){
 		$scope.list = [];// to do list
         $scope.compeletedList = []; // history of completed items
 
@@ -11,9 +11,7 @@ var toDo = angular.module('ToDoApp',[]);
             if($scope.listItem !=null && $scope.listItem !=''){
                 $scope.list.push({item:$scope.listItem, compeleted:false});
                 $scope.listItem ='';
-            }
-            
-        	
+            }	
          	
          };
 

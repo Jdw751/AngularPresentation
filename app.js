@@ -17,7 +17,7 @@ app.config(function($routeProvider) {
 	})
 	
 	// .when('/ToDoList', {
-	// 	templateUrl: 'ToDoList.html',
+	// 	templateUrl: 'ToDoList.htm',
 	// 	controller: 'ToDoCtrl'
 	// })
 	// .when('/Budget', {
