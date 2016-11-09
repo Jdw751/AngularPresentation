@@ -1,0 +1,56 @@
+
+
+
+	<div class="jumbotron">
+		<h1>To Do List</h1>
+	</div>
+
+
+	<div class="container"></div>
+
+	<!-- <div ng-controller='ToDoCtrl'> -->
+		<div class="container">
+			<form ng-submit='addToList()'>
+				Enter List Item:
+				<input type='text' ng-model='listItem' placeholder='put it here'/>
+				<input type='submit' class="btn btn-primary" value='Add to List'>
+			</form>
+		</div>
+					<br>
+	
+		<div class="container">
+			<div class="well">
+				<b>TO DO LIST:</b>
+					<ol >
+						<li ng-model='ones.compeleted' ng-repeat='ones in list'>
+							<span class='theList-{{ones.compeleted}}'>{{ones.item}}</span>
+							<input type ='button' ng-click="removeFromList($index)" ng-model='ones.compeleted' class="btn btn-danger" value='Delete'/>
+							<input type ='button' ng-click="compeleteTask($index)" ng-model='ones.compeleted' class="btn btn-success" value='Completed'/>
+						</li>
+						<br>
+					</ol>
+
+
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="well">
+				<b>COMPLETED TASKS:</b>
+					<ol >
+						<li ng-model='each.compeleted' ng-repeat='each in compeletedList'>
+							<span class='done-{{each.compeleted}}'>{{each.item}}</span>
+							<input type ='button' ng-click="returnToList($index)" ng-model='each.compeleted' class="btn btn-info" value='Return to List'/>
+							
+						</li>
+						<br>
+					</ol>
+
+
+			</div>
+		</div>
+	<!-- </div> -->
+
+
+
+
