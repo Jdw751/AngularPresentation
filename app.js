@@ -1,14 +1,14 @@
-var app = angular.module("mainApp",['ngRoute','BMIApp','ToDoApp','BudgetApp']);
-var bodyMassIndex = angular.module('BMIApp',[]);
-var toDo = angular.module('ToDoApp',[]);
-var budget = angular.module('BudgetApp',[]);
+var app = angular.module("mainApp",['ngRoute','BMIApp']);
+// var bodyMassIndex = angular.module('BMIApp',[]);
+//var toDo = angular.module('ToDoApp',[]);
+//var budget = angular.module('BudgetApp',[]);
 
 
 
 app.config(function($routeProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: 'index.html',
+		templateUrl: 'index.html'
 		
 	})
 	.when('/BMI', {
@@ -16,17 +16,14 @@ app.config(function($routeProvider) {
 		controller: 'BMICtrl'
 	})
 	
-	.when('/ToDoList', {
-		templateUrl: 'ToDoList.html',
-		controller: 'ToDoCtrl'
-	})
-	.when('/Budget', {
-		templateUrl: 'Budget.html',
-		controller: 'BudgetCtrl'
-	})
+	// .when('/ToDoList', {
+	// 	templateUrl: 'ToDoList.html',
+	// 	controller: 'ToDoCtrl'
+	// })
+	// .when('/Budget', {
+	// 	templateUrl: 'Budget.html',
+	// 	controller: 'BudgetCtrl'
+	// })
 });
 
-app.controller('BMICtrl',function($scope){
 
-	$scope.message = 'B.M.I.';
-});
