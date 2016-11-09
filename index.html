@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
-</head>
-<body ng-app="mainApp">
+  <head>
+    <title>Bootstrap Case</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    
+    
+  </head>
+  <body ng-app="mainApp">
 
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -15,26 +17,26 @@
           <a class="navbar-brand" href="#">Life App</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#/">Home</a></li>
-          <li><a href="#/BMI">BMI</a></li>
-          <li><a href="#/ToDoList">To Do List</a></li>
-          <li><a href="#/Budget">Budget Sheet</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#BMI">BMI</a></li>
+          <li><a href="#ToDoList">To Do List</a></li>
+          <li><a href="#Budget">Budget Sheet</a></li>
         </ul>
       </div>
     </nav>
- 
-  <div ng-view></div>
 
+    <div ng-view></div>
 
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://code.angularjs.org/1.5.8/angular.js"></script>
-	<script src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
-	<script  src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+  	<script src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
 
-	<script src="BMICtrl.js"></script>
-	<script src="ToDoCtrl.js"></script>
-	<script src="BudgetCtrl.js"></script>
-</body>
+  	<script  src="app.js"></script>
+
+  	<script src="BMICtrl.js"></script>
+  	<script src="ToDoCtrl.js"></script>
+  	<script src="BudgetCtrl.js"></script>
+  </body>
 </html>
 
