@@ -1,4 +1,4 @@
-var toDo = angular.module('ToDoApp',[]);
+var toDo = angular.module('ToDoApp');
 
 
 	toDo.controller('ToDoCtrl', function ($scope){
