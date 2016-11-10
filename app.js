@@ -1,5 +1,5 @@
 var app = angular.module("mainApp",['ngRoute','BMIApp']);
-// var bodyMassIndex = angular.module('BMIApp',[]);
+var bodyMassIndex = angular.module('BMIApp',[]);
 //var toDo = angular.module('ToDoApp',[]);
 //var budget = angular.module('BudgetApp',[]);
 
@@ -7,10 +7,10 @@ var app = angular.module("mainApp",['ngRoute','BMIApp']);
 
 app.config(function($routeProvider) {
 	$routeProvider
-	.when('/', {
-		templateUrl: 'index.html'
+	// .when('/', {
+	// 	templateUrl: 'index.html'
 		
-	})
+	// })
 	.when('/BMI', {
 		templateUrl: 'BMI.htm',
 		controller: 'BMICtrl'

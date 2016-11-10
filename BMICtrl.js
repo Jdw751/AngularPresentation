@@ -1,5 +1,5 @@
-var bmi = angular.module('BMIApp',[]);
+var bodyMassIndex = angular.module('BMIApp');
 
-bmi.controller("BMICtrl", function($scope){
+bodyMassIndex.controller("BMICtrl", function($scope){
 	$scope.msg ="Here be BMI";
 });
