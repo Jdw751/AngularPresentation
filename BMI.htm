@@ -12,7 +12,7 @@
 				<div class='col-md-4'>
 					<form>
 						Scale:
-						<input type="radio" ng-model="scale" value="metric" >Metric
+						<input type="radio" ng-model="scale" value="metric" checked="">Metric  
 						<input type="radio" ng-model="scale" value="imperial">Imperial
 					</form>
 				</div>
@@ -39,7 +39,10 @@
 					<br>
 					<p>
 						BMI:
-						{{calculateBmiMetric(heightMeters,weightKg)}}
+						{{calculateBmiMetric(heightMeters,weightKg).bmi}}
+						<br>
+						Category:
+						{{calculateBmiMetric(heightMeters,weightKg).result}}
 					</p>
 				</div>
 				<div ng-switch-when="imperial">
@@ -63,7 +66,10 @@
 					<br>
 					<p>
 						BMI:
-						{{calculateBmiImperial(heightFeet,heightInches,weightLb)}}
+						{{calculateBmiImperial(heightFeet,heightInches,weightLb).bmi}}
+						<br>
+						Category:
+						{{calculateBmiImperial(heightFeet,heightInches,weightLb).result}}
 					</p>
 				</div>
 			</div>	
