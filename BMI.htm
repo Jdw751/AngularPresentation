@@ -1,44 +1,72 @@
 
 <div ng-app='BMIApp'>
 	<div class="container">
-		<div class="well">
-			<form class='form-inline' ng-submit=''>
-				<div class='row'>
-					<div class='col-md-4'>
-						<h2><label><span class="glyphicon glyphicon-heart"></span>BMI</label></h2>
-					</div>
-					<div class='col-md-4'>
-						<form>
-							Scale:
-							<input type="radio" ng-model="scale" value="metric" >Metric
-							<input type="radio" ng-model="scale" value="imperial">Imperial
-
-						</form>
-
-					</div>
-
+		<div class="well">			
+			<div class='row'>
+				<div class='col-md-6'>
+					<h2><label><span class="glyphicon glyphicon-heart"></span>BMI</label></h2>
 				</div>
-				<div class='row'>
-					<div ng-switch="scale">
-						<div ng-switch-when="metric">
+			</div>	
+			<div class='row'>	
+				<h3>
+				<div class='col-md-4'>
+					<form>
+						Scale:
+						<input type="radio" ng-model="scale" value="metric" >Metric
+						<input type="radio" ng-model="scale" value="imperial">Imperial
+					</form>
+				</div>
+				</h3>
+
+			</div>
+
+			<br>
+			<div ng-switch ='scale'>
+				<div ng-switch-when="metric">
+					<div class='row'>
+						<div class='col-md-6'>
 							Meters:
-							<input type="number" ng-model="heightMeters">m
-
-
+							<br>
+							<input type="number" ng-model="heightMeters" value="0"> m
 						</div>
+						<div class='col-md-6'>
+							Killograms:
+							<br>
+							<input type="number" ng-model="weightKg" value="0"> kg
+						</div>
+						
 					</div>
-					
-					<div ng-switch-when="imperial">
-						Feet:
-						<input type="number" ng-model="heightFeet">ft
-						Inches:
-						<input type="number" ng-model="heightInches">in
-					</div>
+					<br>
+					<p>
+						BMI:
+						{{calculateBmiMetric(heightMeters,weightKg)}}
+					</p>
 				</div>
-			</form>
+				<div ng-switch-when="imperial">
+					<div class='row'>
+						<div class='col-md-6'>
+							Feet:
+							<br>
+							<input type="number" ng-model="heightFeet" value="0"> ft.
+							<br>
+							Inches:
+							<br>
+							<input type="number" ng-model="heightInches" value="0"> in.
+						</div>
+						<div class='col-md-6'>
+							Pounds:
+							<br>
+							<input type="number" ng-model="weightLb" value="0" > lbs.	
+						</div>
+						
+					</div>
+					<br>
+					<p>
+						BMI:
+						{{calculateBmiImperial(heightFeet,heightInches,weightLb)}}
+					</p>
+				</div>
+			</div>	
 		</div>
-
-
 	</div>
-
 </div>
