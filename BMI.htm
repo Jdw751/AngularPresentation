@@ -23,54 +23,57 @@
 			<br>
 			<div ng-switch ='scale'>
 				<div ng-switch-when="metric">
-					<div class='row'>
-						<div class='col-md-6'>
-							Meters:
-							<br>
-							<input type="number" ng-model="heightMeters" value="0"> m
+					<div class='well'>
+						<div class='row'>
+							<div class='col-md-6'>
+								<b>Meters:</b>
+								<br>
+								<input type="number" ng-model="heightMeters" value="0"> m
+							</div>
+							<div class='col-md-6'>
+								<b>Killograms:</b>
+								<br>
+								<input type="number" ng-model="weightKg" value="0"> kg
+							</div>
+							
 						</div>
-						<div class='col-md-6'>
-							Killograms:
-							<br>
-							<input type="number" ng-model="weightKg" value="0"> kg
-						</div>
-						
-					</div>
-					<br>
-					<p>
-						BMI:
-						{{calculateBmiMetric(heightMeters,weightKg).bmi}}
 						<br>
-						Category:
-						{{calculateBmiMetric(heightMeters,weightKg).result}}
-					</p>
+						<p>
+							<b>BMI:</b>
+							{{calculateBmiMetric(heightMeters,weightKg).bmi}}
+							<br>
+							<b>Category:</b>
+							{{calculateBmiMetric(heightMeters,weightKg).result}}
+						</p>
+					</div>
 				</div>
 				<div ng-switch-when="imperial">
-					<div class='row'>
-						<div class='col-md-6'>
-							Feet:
-							<br>
-							<input type="number" ng-model="heightFeet" value="0"> ft.
-							<br>
-							Inches:
-							<br>
-							<input type="number" ng-model="heightInches" value="0"> in.
+					<div class='well'>
+						<div class='row'>
+							<div class='col-md-6'>
+								<b>Feet:</b>
+								<br>
+								<input type="number" ng-model="heightFeet" value="0"> ft.
+								<br>
+								<b>Inches:</b>
+								<br>
+								<input type="number" ng-model="heightInches" value="0"> in.
+							</div>
+							<div class='col-md-6'>
+								<b>Pounds:</b>
+								<br>
+								<input type="number" ng-model="weightLb" value="0" > lbs.	
+							</div>		
 						</div>
-						<div class='col-md-6'>
-							Pounds:
-							<br>
-							<input type="number" ng-model="weightLb" value="0" > lbs.	
-						</div>
-						
-					</div>
-					<br>
-					<p>
-						BMI:
-						{{calculateBmiImperial(heightFeet,heightInches,weightLb).bmi}}
 						<br>
-						Category:
-						{{calculateBmiImperial(heightFeet,heightInches,weightLb).result}}
-					</p>
+						<p>
+							<b>BMI:</b>
+							{{calculateBmiImperial(heightFeet,heightInches,weightLb).bmi}}
+							<br>
+							<b>Category:</b>
+							{{calculateBmiImperial(heightFeet,heightInches,weightLb).result}}
+						</p>
+					</div>
 				</div>
 			</div>	
 		</div>

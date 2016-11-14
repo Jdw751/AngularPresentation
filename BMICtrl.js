@@ -35,7 +35,7 @@ bodyMassIndex.controller("BMICtrl", function($scope){
 		bmi = (weightKg/(heightMeters * heightMeters));
 
 		var category = $scope.result(bmi);
-		var results = {bmi: bmi, result:category};
+		var results = {bmi: bmi.toPrecision(3), result:category};
 		
 		return results;
 

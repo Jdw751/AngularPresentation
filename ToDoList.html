@@ -1,11 +1,5 @@
 
-
-
-	
-
 	<div class="container"></div>
-
-	
 		<div class="container">
 			<form ng-submit='addToList()'>
 				Enter List Item:
@@ -13,21 +7,26 @@
 				<input type='submit' class="btn btn-primary" value='Add to List'>
 			</form>
 		</div>
-					<br>
-	
+		<br>
 		<div class="container">
 			<div class="well">
 				<b>TO DO LIST:</b>
-					<ol >
+				<div class="row">
+					<ol>
 						<li ng-model='ones.compeleted' ng-repeat='ones in list'>
-							<span class='theList-{{ones.compeleted}}'>{{ones.item}}</span>
-							<input type ='button' ng-click="removeFromList($index)" ng-model='ones.compeleted' class="btn btn-danger" value='Delete'/>
-							<input type ='button' ng-click="compeleteTask($index)" ng-model='ones.compeleted' class="btn btn-success" value='Completed'/>
+							<div class='col-md-4'>
+								<span class='theList-{{ones.compeleted}}'>{{ones.item}}</span>
+							</div>
+							<div class='col-md-4'>
+								<input type ='button' ng-click="removeFromList($index)" ng-model='ones.compeleted' class="btn btn-danger" value='Delete'/>
+							</div>
+							<div class='col-md-4'>
+								<input type ='button' ng-click="compeleteTask($index)" ng-model='ones.compeleted' class="btn btn-success" value='Completed'/>
+							</div>
 						</li>
 						<br>
 					</ol>
-
-
+				</div>
 			</div>
 		</div>
 
@@ -38,7 +37,7 @@
 						<li ng-model='each.compeleted' ng-repeat='each in compeletedList'>
 							<span class='done-{{each.compeleted}}'>{{each.item}}</span>
 							<input type ='button' ng-click="returnToList($index)" ng-model='each.compeleted' class="btn btn-info" value='Return to List'/>
-							
+							<input type ='button' ng-click="removeFromCompleteList($index)" ng-model='ones.compeleted' class="btn btn-danger" value='Delete'/>
 						</li>
 						<br>
 					</ol>
