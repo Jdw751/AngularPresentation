@@ -1,4 +1,4 @@
-var budget = angular.module('BudgetApp', []);
+var budget = angular.module('BudgetApp', ['ng-currency']);
 
 
 budget.controller('BudgetCtrl', function($scope) {
