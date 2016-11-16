@@ -48,12 +48,12 @@ bodyMassIndex.controller("BMICtrl", function($scope){
 		var bmi = 0.0;
 		var metricHeight = $scope.convertHeight(heightFeet,heightInches);//converted imperial to meteric height
 		var metricWeight = $scope.convertWeight(weightLb); //converted imperial to meteric weight
-		var results = $scope.calculateBmiMetric(metricHeight,metricWeight);
+		var results = $scope.calculateBmiMetric(metricHeight,metricWeight);//send converted values to get bmi and category
 		
 		return results;
 
 	};
-	$scope.result = function(gottenBMI){
+	$scope.result = function(gottenBMI){//returns category based on bmi score
 
 		var result ="";//initialzied as empty stiring
 
