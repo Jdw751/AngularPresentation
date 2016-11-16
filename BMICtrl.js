@@ -2,15 +2,17 @@ var bodyMassIndex = angular.module('BMIApp');
 
 bodyMassIndex.controller("BMICtrl", function($scope){
 	
+	
 
 	$scope.convertHeight = function(heightFeet,heightInches){
 		
 		var inchesTotal = 0;
 		var meters = 0 ;
+		var inchcesToMeters = 0.0254;// converstion factor for inches to meters
 
 		inchesTotal += (heightFeet * 12);//convert feet to inchces add to total
 		inchesTotal += heightInches;// add inches to total
-		meters = (inchesTotal * 0.0254);//convert inches to meters
+		meters = (inchesTotal * inchcesToMeters);//convert inches to meters
 		
 		return meters;
 
@@ -19,7 +21,7 @@ bodyMassIndex.controller("BMICtrl", function($scope){
 	$scope.convertWeight = function(weightLb){
 
 		var kgTotal = 0;
-		var poundToKg = 0.45359237;
+		var poundToKg = 0.45359237;// convertion factor for pounds to kilograms
 
 		kgTotal += (weightLb * poundToKg);//convert pounds to kilograms
 		
@@ -32,10 +34,10 @@ bodyMassIndex.controller("BMICtrl", function($scope){
 	$scope.calculateBmiMetric = function (heightMeters, weightKg){
 
 		var bmi = 0.0;
-		bmi = (weightKg/(heightMeters * heightMeters));
+		bmi = (weightKg/(heightMeters * heightMeters)).toPrecision(3);//calculate bmi: format XX.X
 
-		var category = $scope.result(bmi);
-		var results = {bmi: bmi.toPrecision(3), result:category};
+		var category = $scope.result(bmi);// get category of bmi rating
+		var results = {bmi: bmi, result:category}; //store bmi and rating to be extracted later
 		
 		return results;
 
@@ -44,8 +46,8 @@ bodyMassIndex.controller("BMICtrl", function($scope){
 	$scope.calculateBmiImperial = function (heightFeet,heightInches,weightLb){
 
 		var bmi = 0.0;
-		var metricHeight = $scope.convertHeight(heightFeet,heightInches);
-		var metricWeight = $scope.convertWeight(weightLb);
+		var metricHeight = $scope.convertHeight(heightFeet,heightInches);//converted imperial to meteric height
+		var metricWeight = $scope.convertWeight(weightLb); //converted imperial to meteric weight
 		var results = $scope.calculateBmiMetric(metricHeight,metricWeight);
 		
 		return results;
@@ -53,7 +55,7 @@ bodyMassIndex.controller("BMICtrl", function($scope){
 	};
 	$scope.result = function(gottenBMI){
 
-		var result ="";
+		var result ="";//initialzied as empty stiring
 
 		if(gottenBMI < 15.0){
 			result = "Very severely underweight";

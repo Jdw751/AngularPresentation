@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+
+<div ng-app="BudgetApp" ng-controller="BudgetCtrl">
+	<div class="container">
+		<div ng-mouseenter='sectionHighlight = true ' ng-mouseleave='sectionHighlight =false ' ng-init='sectionHighlight=false ; rowHighlight=false'>
+		  <table class="table table-bordered table-hover">
+		    <thead>
+			     <tr ng-show='sectionHighlight'>
+			     	<th></th>
+			     	<th></th>
+			     	<th></th>
+			     	<th>Delete Section</th>
+			     </tr>
+		     </thead>
+		      <tr>
+		        <td><b>SectionName <href ng-show='sectionHighlight'> edit add row </href></b></td>
+		        <td>Budget</td>
+		        <td>Actual</td>
+		        <td>Difference</td>
+		      </tr>
+		    
+
+		    <tbody><!-- repeat rows of section table -->
+		     <!--  <tr ng-repeat='ones in thisTable'> -->
+			     <div ng-mouseenter='rowHighlight = true' ng-mouseleave='rowHighlight = false'>
+				     <tr>
+				        <td>{{rowName}} row name <href ng-show='rowHighlight'> delete row</href></td>
+				        <td>$<input type="text" ng-model='budgetInput' ng-init=" budgetInput = 0.00"></td>
+				        <td>$<input type="text" ng-model='actualInput' ng-init=" actualInput = 0.00"></td>
+				        <td>{{budgetInput-actualInput | currency}}</td>
+				     </tr>
+			      </div>
+			      <tr>
+			        <td><b>Total</b></td>
+			        <td>Budget ReadOnly</td>
+			        <td>Actual ReadOnly</td>
+			        <td>Difference ReadOnly</td>
+			      </tr>
+		    </tbody>
+		  </table>
+	  </div>
+	</div>
+
+    <br>
+</div>
+
+
+
+
+
+
+<script src="BudgetCtrl.js"></script>
+</body>
+</html>
+

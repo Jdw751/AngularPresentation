@@ -9,12 +9,12 @@
     
     
   </head>
-  <body ng-app="mainApp">
+  <body ng-app="mainApp" ng-controller='headCtrl'>
 
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" >Life App</a>
+          <a class="navbar-brand" >{{theTime}}</a>
         </div>
         <ul class="nav navbar-nav">
           <li><a href="#">Home</a></li>
@@ -33,6 +33,7 @@
   <script src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
 
   	<script  src="app.js"></script>
+    <script src="headCtrl.js"></script>
 
   	<script src="BMICtrl.js"></script>
   	<script src="ToDoCtrl.js"></script>
