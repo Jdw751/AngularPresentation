@@ -32,9 +32,9 @@
 			     <div ng-mouseenter='rowHighlight = true' ng-mouseleave='rowHighlight = false'>
 				     <tr>
 				        <td>{{rowName}} row name <href ng-show='rowHighlight'> delete row</href></td>
-				        <td>$<input type="text" ng-model='budgetInput' ng-init=" budgetInput = 0.00"></td>
-				        <td>$<input type="text" ng-model='actualInput' ng-init=" actualInput = 0.00"></td>
-				        <td>{{budgetInput-actualInput | currency}}</td>
+				        <td><input type="text" ng-model='budgetInput' ng-init=" budgetInput = 0.00" format="currency"/></td>
+				        <td><input type="text" ng-model='actualInput' ng-init=" actualInput = 0.00" format="currency"/></td>
+				        <td>{{rowDifference(budgetInput,actualInput) | currency}}</td>
 				     </tr>
 			      </div>
 			      <tr>
