@@ -20,15 +20,14 @@ var toDo = angular.module('ToDoApp');
         {
 
             $scope.list.splice(index,1);
-
-        	
+ 	
         };
+
         $scope.removeFromCompleteList = function(index)
         {
 
             $scope.compeletedList.splice(index,1);
-
-            
+       
         };
 
         $scope.compeleteTask = function(index)

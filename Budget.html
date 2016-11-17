@@ -10,40 +10,44 @@
 
 <div ng-app="BudgetApp" ng-controller="BudgetCtrl">
 	<div class="container">
-		<div ng-mouseenter='sectionHighlight = true ' ng-mouseleave='sectionHighlight =false ' ng-init='sectionHighlight=false ; rowHighlight=false'>
+		<h4>
+			<button  ng-click='addSection()' class="glyphicon glyphicon-plus-sign"> </button>
+        </h4>
+		<div ng-mouseenter='sectionHighlight = true' ng-mouseleave='sectionHighlight =false' ng-init='sectionHighlight=false'>
 		  <table class="table table-bordered table-hover">
 		    <thead>
-			     <tr ng-show='sectionHighlight'>
-			     	<th></th>
-			     	<th></th>
-			     	<th></th>
-			     	<th>Delete Section</th>
-			     </tr>
-		     </thead>
-		      <tr>
-		        <td><b>SectionName <href ng-show='sectionHighlight' class='text-right'> add row </href></b></td>
-		        <td>Budget</td>
-		        <td>Actual</td>
-		        <td>Difference</td>
-		      </tr>
+			    <tr ng-show='sectionHighlight'>
+			    <th></th>
+			    <th></th>
+			    <th></th>
+			    <th>Delete Section</th>
+			    </tr>
+		    </thead>
+		    <tr>
+		    	<td><b>SectionName</b> <href ng-show='sectionHighlight' class='text-right'> <button ng-click='addRow()' class="glyphicon glyphicon-plus-sign"> </button> </href></td>
+		    	<td>Budget</td>
+		    	<td>Actual</td>
+		    	<td>Difference</td>
+		    </tr>
 		    
 
 		    <tbody><!-- repeat rows of section table -->
-		     <!--  <tr ng-repeat='ones in thisTable'> -->
-			     <div ng-mouseenter='rowHighlight = true' ng-mouseleave='rowHighlight = false'>
-				     <tr>
-				        <td>{{rowName}} row name <href ng-show='rowHighlight'> delete row</href></td>
-				        <td><input type="text" ng-model='budgetInput' ng-init=" budgetInput = 0.00" ng-currency/></td>
-				        <td><input type="text" ng-model='actualInput' ng-init=" actualInput = 0.00" ng-currency/></td>
-				        <td>{{rowDifference(budgetInput,actualInput) | currency}}</td>
-				     </tr>
-			      </div>
-			      <tr>
-			        <td><b>Total</b></td>
-			        <td>Budget ReadOnly</td>
-			        <td>Actual ReadOnly</td>
-			        <td>Difference ReadOnly</td>
-			      </tr>
+		    <tr ng-model = 'ones.list' ng-repeat='ones in Section'> 
+			    <div ng-mouseenter='rowHighlight = true' ng-mouseleave='rowHighlight = false'>
+				    <tr>
+					    <td>{{ones.rowName}}  </td>
+					    <td><input type="text" ng-model='budgetInput' ng-init=" budgetInput = 0.00" ng-currency/></td>
+					    <td><input type="text" ng-model='actualInput' ng-init=" actualInput = 0.00" ng-currency/></td>
+					    <td>{{rowDifference(budgetInput,actualInput) | currency}}</td>
+				    </tr>
+			    </div>
+			</tr>
+		    <tr>
+			    <td><b>Total</b></td>	
+			    <td>Budget ReadOnly</td>
+			    <td>Actual ReadOnly</td>
+			    <td>Difference ReadOnly</td>
+		    </tr>
 		    </tbody>
 		  </table>
 	  </div>
