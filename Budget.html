@@ -32,14 +32,15 @@
 		    
 
 		    <tbody><!-- repeat rows of section table -->
-		    <tr ng-model = 'ones.list' ng-repeat='ones in Section'> 
+		    <tr  ng-repeat='ones in Row'> 
 			    <div ng-mouseenter='rowHighlight = true' ng-mouseleave='rowHighlight = false'>
-				    <tr>
-					    <td>{{ones.rowName}}  </td>
-					    <td><input type="text" ng-model='budgetInput' ng-init=" budgetInput = 0.00" ng-currency/></td>
-					    <td><input type="text" ng-model='actualInput' ng-init=" actualInput = 0.00" ng-currency/></td>
-					    <td>{{rowDifference(budgetInput,actualInput) | currency}}</td>
-				    </tr>
+				    
+					    <td><input type='text' ng-model='ones.rowName' ></td>
+					    <td><input type="text" ng-model='ones.budgetInput' ng-init=" ones.budgetInput = 0.00" ng-currency/></td>
+					    <td><input type="text" ng-model='ones.actualInput' ng-init=" ones.actualInput = 0.00" ng-currency/></td>
+					   <!--  <td>{{rowDifference(budgetInput,actualInput) | currency}}</td> -->
+					   <td>{{ones.difference | currency}}</td>
+				  
 			    </div>
 			</tr>
 		    <tr>

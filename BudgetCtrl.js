@@ -3,13 +3,17 @@ var budget = angular.module('BudgetApp', ['ng-currency']);
 
 budget.controller('BudgetCtrl', function($scope) {
     $scope.BudgetSheet = [];
-    $scope.Section = [{rowName:'Num One'}];
+    $scope.Section = [];
+    $scope.Row = [{rowName:'New Row',
+        					budget:$scope.budgetInput,
+        				    actual: $scope.actualInput,
+        					difference: ($scope.budgetInput - $scope.actualInput)}];
 
     $scope.rowDifference = function(budgetInput, actualInput){
 
     	var rowNetTotal = (budgetInput - actualInput);
 
-    	console.log(rowNetTotal);
+    	
 
 		return rowNetTotal;
 		};
@@ -23,18 +27,23 @@ budget.controller('BudgetCtrl', function($scope) {
             
          	
          };
-    $scope.addRow = function () {//not complete
+    $scope.addRow = function (ones) {//not complete
 
         
-            $scope.Section.push({rowName:'New Row'});
+            // $scope.Row.push({rowName:'New Row',budget:$scope.budgetInput, actual:$scope.actualInput, difference:($scope.budgetInput - $scope.actualInput)});
+            $scope.Row.push({rowName:'New Row',
+        					budget:$scope.budgetInput,
+        				    actual: $scope.actualInput,
+        					difference: budget-$scope.actualInput,
+        				});
                 
-            console.log($scope.Section);
+            
             
          	
          };
     
 
-
+	console.log($scope.Row);
 });
 
 
