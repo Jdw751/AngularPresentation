@@ -18,3 +18,5 @@ https://en.wikipedia.org/wiki/Dead_Zone_(video_game)
 
 http://www.creativebloq.com/web-design/master-screen-orientation-html5-101517371
 
+https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation
+
