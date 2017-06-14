@@ -36,3 +36,17 @@ https://en.wikipedia.org/wiki/Gundemonium_Collection
 
 https://en.wikipedia.org/wiki/Willie_Best
 
+https://v4-alpha.getbootstrap.com/components/input-group/
+
+https://docs.angularjs.org/api/ng/directive/select
+
+http://techfunda.com/Examples/Show/529
+
+http://embed.plnkr.co/cnPM0J/preview
+
+****https://stackoverflow.com/questions/18309059/drop-down-menu-text-field-in-one
+
+https://www.howtogeek.com/254830/why-your-photos-dont-always-appear-correctly-rotated/
+
+https://www.howtogeek.com/203592/what-is-exif-data-and-how-to-remove-it/
+
