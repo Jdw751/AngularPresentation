@@ -56,3 +56,4 @@ http://www.daveperrett.com/articles/2012/07/28/exif-orientation-handling-is-a-gh
 
 http://www.impulseadventure.com/photo/exif-orientation.html
 
+https://stackoverflow.com/questions/16221005/determine-orientation-of-photos-in-javascript
