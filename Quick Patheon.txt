@@ -51,3 +51,8 @@ https://www.howtogeek.com/254830/why-your-photos-dont-always-appear-correctly-ro
 https://www.howtogeek.com/203592/what-is-exif-data-and-how-to-remove-it/
 
 https://forum.getkirby.com/t/wrong-orientation-of-images-portrait-landscape-after-upload/692/7
+
+http://www.daveperrett.com/articles/2012/07/28/exif-orientation-handling-is-a-ghetto/
+
+http://www.impulseadventure.com/photo/exif-orientation.html
+
