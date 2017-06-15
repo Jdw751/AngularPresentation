@@ -66,3 +66,5 @@ https://stackoverflow.com/questions/2323281/can-js-jquery-determine-the-orientat
 
 https://www.html5rocks.com/en/tutorials/device/orientation/
 
+https://dev.opera.com/articles/w3c-device-orientation-api/
+
