@@ -68,3 +68,6 @@ https://www.html5rocks.com/en/tutorials/device/orientation/
 
 https://dev.opera.com/articles/w3c-device-orientation-api/
 
+http://www.xanthir.com/etc/exif/
+
+
