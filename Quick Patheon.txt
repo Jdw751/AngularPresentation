@@ -59,3 +59,5 @@ http://www.impulseadventure.com/photo/exif-orientation.html
 https://stackoverflow.com/questions/16221005/determine-orientation-of-photos-in-javascript
 
 https://www.npmjs.com/browse/keyword/exif
+
+https://stackoverflow.com/questions/7814186/drop-down-menu-that-opens-up-upward-with-pure-css
