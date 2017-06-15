@@ -61,3 +61,5 @@ https://stackoverflow.com/questions/16221005/determine-orientation-of-photos-in-
 https://www.npmjs.com/browse/keyword/exif
 
 https://stackoverflow.com/questions/7814186/drop-down-menu-that-opens-up-upward-with-pure-css
+
+https://stackoverflow.com/questions/2323281/can-js-jquery-determine-the-orientation-of-the-iphone
