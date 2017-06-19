@@ -70,4 +70,6 @@ https://dev.opera.com/articles/w3c-device-orientation-api/
 
 http://www.xanthir.com/etc/exif/
 
+https://jsfiddle.net/wunderbart/w1hw5kv1/
+
 
