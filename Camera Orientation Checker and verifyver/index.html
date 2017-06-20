@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="exif.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="angular-base64-upload.js"></script>
+</head>
+<body>
+Upload a local file to read Exif data.
+<br/>
+<input id="file-input" type="file" ng-model="file" onchange="loadImageFileAsURL();"/>
+<br/><br/>
+
+Before:
+<img src="IMG_0406.jpg" id="img1" style="width: 25%; height:25% " />
+<br/>
+
+<br/>
+After:
+<img id="image-reset" src="" style="width: 25%; height:25% "/>
+
+
+<button id="objecturltest">Object URL Test</button><br/>
+<br/>
+<button id="blobtest">Blob Test</button><br/>
+<br/>
+
+<p>File Contents as DataURL:</p>
+    <textarea id="textAreaFileContents" style="width:640;height:240" ></textarea>
+
+<script>
+
+
+
+
+document.getElementById("img1").onclick = function() {
+    EXIF.getData(this, function() {
+        var make = EXIF.getTag(this, "Make"),
+            model = EXIF.getTag(this, "Model");
+        alert("I was taken by a " + make + " " + model);
+         var imageOrientation = EXIF.getTag(this,"Orientation");
+
+
+
+        
+    });
+}
+
+
+document.getElementById("img1").onchange = function(e) {
+    EXIF.getData(e.target.files[0], function() {
+        alert(EXIF.pretty(this));
+        
+        var imageOrientation = EXIF.getTag(this,"Orientation");
+        
+
+
+        console.log('imageOrientation '+imageOrientation);
+        
+    });
+}
+
+document.getElementById("objecturltest").onclick = function() {
+    var http = new XMLHttpRequest();
+    http.open("GET", "IMG_0406.jpg", true);
+    http.responseType = "blob";
+    http.onload = function(e) {
+        if (this.status === 200) {
+            var image = new Image();
+            image.onload = function() {
+                EXIF.getData(image, function() {
+                    alert(EXIF.pretty(this));
+                });
+            };
+            image.src = URL.createObjectURL(http.response);
+        }
+    };
+    http.send();
+}
+document.getElementById("blobtest").onclick = function() {
+    var http = new XMLHttpRequest();
+    http.open("GET", "IMG_0406.jpg", true);
+    http.responseType = "blob";
+    http.onload = function(e) {
+        if (this.status === 200) {
+            EXIF.getData(http.response, function() {
+                alert(EXIF.pretty(this));
+            });
+        }
+    };
+    http.send();
+}
+
+function getImageOrientation(){
+		EXIF.getData(this, function() {
+        
+         var imageOrientation = EXIF.getTag(this,"Orientation");
+         console.log('in function getImageOrientation ' + imageOrientation);
+
+         return imageOrientation;
+        
+    });
+
+}
+
+function loadImageFileAsURL()
+{
+	console.log('things');
+    var filesSelected = document.getElementById("file-input").files;
+    console.log(filesSelected);
+    if (filesSelected.length > 0)
+    {
+        var fileToLoad = filesSelected[0];
+ 
+        var fileReader = new FileReader();
+ 
+        fileReader.onload = function(fileLoadedEvent) 
+        {
+            var textAreaFileContents = document.getElementById
+            (
+                "textAreaFileContents"
+            );
+     
+            textAreaFileContents.innerHTML = fileLoadedEvent.target.result;
+            var baser64 = fileLoadedEvent.target.result;
+            console.log(fileLoadedEvent.target.result);
+        };
+ 
+        fileReader.readAsDataURL(fileToLoad);
+    }
+}
+
+function resetOrientation(srcBase64, srcOrientation, callback) {
+	var img = new Image();	
+
+	img.onload = function() {
+  	var width = img.width,
+    		height = img.height,
+        canvas = document.createElement('canvas'),
+	  		ctx = canvas.getContext("2d");
+		
+     
+    // set proper canvas dimensions before transform & export
+		if ([5,6,7,8].indexOf(srcOrientation) > -1) {
+    	canvas.width = height;
+      canvas.height = width;
+    } else {
+    	canvas.width = width;
+      canvas.height = height;
+    }
+	
+  	// transform context before drawing image
+    console.log('x ' + srcOrientation);
+   
+		switch (srcOrientation) {
+      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
+      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
+      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
+      case 6: ctx.transform(0, 1, -1, 0, height , 0); break;
+      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
+      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+      default: ctx.transform(1, 0, 0, 1, 0, 0);
+    }
+
+		// draw image
+    ctx.drawImage(img, 0, 0);
+
+		// export base64
+		callback(canvas.toDataURL());
+  };
+
+	img.src = srcBase64;
+}
+
+var resetImage = document.getElementById("image-reset");
+var originalImage = document.getElementById("img1");
+/*var originalImage = document.getElementById("image-original"),
+		resetImage = document.getElementById("image-reset");
+*/
+
+console.log('returngento' + getImageOrientation());
+resetOrientation(originalImage.src, getImageOrientation(), function(resetBase64Image) {
+	resetImage.src = resetBase64Image;
+});
+
+
+</script>
+
+
+
+</body>
+</html>
