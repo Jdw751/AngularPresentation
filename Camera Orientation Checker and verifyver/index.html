@@ -35,6 +35,9 @@ After:
 
 <script>
 
+if (window.DeviceOrientationEvent) {
+ console.log("DeviceOrientation is supported");
+}
 
 resetImage = document.getElementById("image-reset");
 originalImage = document.getElementById("img1");
@@ -182,7 +185,7 @@ function resetOrientation(cameraTilt,srcBase64, srcOrientation, callback) {
 		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
 		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
 		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
-		      case 6: ctx.transform(0, 1, -1, 0, height , 0); break;
+		      case 6: ctx.transform(0, 1, -1, 0, height , 0); break;//
 		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
 		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
 		      default: ctx.transform(1, 0, 0, 1, 0, 0);
@@ -190,7 +193,7 @@ function resetOrientation(cameraTilt,srcBase64, srcOrientation, callback) {
 		   break;
 		case '90':
     		console.log('alpha: 90');
-			switch (srcOrientation) {// alpha of '0'
+			switch (srcOrientation) {// alpha of '90'
 		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
 		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
 		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
@@ -201,7 +204,32 @@ function resetOrientation(cameraTilt,srcBase64, srcOrientation, callback) {
 		      default: ctx.transform(1, 0, 0, 1, 0, 0);
 		    }
 		   break;
-
+		case '180':
+    		console.log('alpha: 180');
+			switch (srcOrientation) {// alpha of '180'
+		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
+		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
+		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
+		      case 6: ctx.transform(0, -1, -1, 0, height , width); break;//works
+		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
+		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+		      default: ctx.transform(1, 0, 0, 1, 0, 0);
+		    }
+		   break;
+		 case '270':
+    		console.log('alpha: 270');
+			switch (srcOrientation) {// alpha of '270 or -90'
+		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
+		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
+		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
+		      case 6: ctx.transform(-1, 0, 0, -1, width, height); break;//works
+		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
+		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+		      default: ctx.transform(1, 0, 0, 1, 0, 0);
+		    }
+		   break;
 		default: 
 			console.log('defaultly');
 
