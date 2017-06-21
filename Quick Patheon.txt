@@ -76,6 +76,9 @@ https://jsfiddle.net/wunderbart/w1hw5kv1/
 
 ***https://oneworldidentity.com/about-owi/
 
+https://mobiforge.com/design-development/html5-mobile-web-device-orientation-events
+
+
 ------
 --travel links--
 ***http://blog.tortugabackpacks.com/packing-light/
