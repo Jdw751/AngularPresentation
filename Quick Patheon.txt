@@ -72,6 +72,8 @@ http://www.xanthir.com/etc/exif/
 
 https://jsfiddle.net/wunderbart/w1hw5kv1/
 
-https://thiscouldbebetter.wordpress.com/2013/07/03/converting-a-file-to-a-base64-dataurl-in-javascript/
+***https://thiscouldbebetter.wordpress.com/2013/07/03/converting-a-file-to-a-base64-dataurl-in-javascript/
+
+***https://oneworldidentity.com/about-owi/
 
 
