@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html >
 <head>
 <script type="text/javascript" src="exif.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
@@ -7,14 +7,20 @@
 
 <script type="text/javascript" src="angular-base64-upload.js"></script>
 </head>
-<body>
+<body >
+<p></p>
 Upload a local file to read Exif data.
 <br/>
-<input id="file-input" type="file" ng-model="file" onchange="loadImageFileAsURL();"/>
+<input id="file-input" type="file" src="" onchange="loadImageFileAsURL()"/>
 <br/><br/>
+<p></p>
+Degrees:
 
+<input id='alpha' type="number" min="0" max="359" value="0" onchange="loadImageFileAsURL()">
+</br>
+<p></p>
 Before:
-<img src="IMG_0406.jpg" id="img1" style="width: 25%; height:25% " />
+<img id="img1" src=""  style="width: 25%; height:25% " />
 <br/>
 
 <br/>
@@ -22,10 +28,7 @@ After:
 <img id="image-reset" src="" style="width: 25%; height:25% "/>
 
 
-<button id="objecturltest">Object URL Test</button><br/>
-<br/>
-<button id="blobtest">Blob Test</button><br/>
-<br/>
+
 
 <p>File Contents as DataURL:</p>
     <textarea id="textAreaFileContents" style="width:640;height:240" ></textarea>
@@ -33,83 +36,71 @@ After:
 <script>
 
 
+resetImage = document.getElementById("image-reset");
+originalImage = document.getElementById("img1");
+
+
+var thatImageRotatate = getImageOrientation();
+
+console.log(thatImageRotatate);
+console.log('orginal sause 1 ' + originalImage.src);
 
 
 document.getElementById("img1").onclick = function() {
+	originalImage = document.getElementById("file-input");
     EXIF.getData(this, function() {
-        var make = EXIF.getTag(this, "Make"),
+        make = EXIF.getTag(this, "Make");
             model = EXIF.getTag(this, "Model");
         alert("I was taken by a " + make + " " + model);
-         var imageOrientation = EXIF.getTag(this,"Orientation");
-
-
-
-        
+         imageOrientation = EXIF.getTag(this,"Orientation");
+         console.log('orignal image Orientation ' + imageOrientation);       
     });
 }
 
 
-document.getElementById("img1").onchange = function(e) {
+document.getElementById("file-input").onchange = function(e) {
     EXIF.getData(e.target.files[0], function() {
         alert(EXIF.pretty(this));
         
         var imageOrientation = EXIF.getTag(this,"Orientation");
-        
-
-
+       
         console.log('imageOrientation '+imageOrientation);
+        console.log( this);
         
+        img1.src = this.name;
+        
+        console.log('image 1 sause ' + img1.src);
+
+        loadImageFileAsURL();
     });
 }
 
-document.getElementById("objecturltest").onclick = function() {
-    var http = new XMLHttpRequest();
-    http.open("GET", "IMG_0406.jpg", true);
-    http.responseType = "blob";
-    http.onload = function(e) {
-        if (this.status === 200) {
-            var image = new Image();
-            image.onload = function() {
-                EXIF.getData(image, function() {
-                    alert(EXIF.pretty(this));
-                });
-            };
-            image.src = URL.createObjectURL(http.response);
-        }
-    };
-    http.send();
-}
-document.getElementById("blobtest").onclick = function() {
-    var http = new XMLHttpRequest();
-    http.open("GET", "IMG_0406.jpg", true);
-    http.responseType = "blob";
-    http.onload = function(e) {
-        if (this.status === 200) {
-            EXIF.getData(http.response, function() {
-                alert(EXIF.pretty(this));
-            });
-        }
-    };
-    http.send();
-}
+
 
 function getImageOrientation(){
-		EXIF.getData(this, function() {
+		var thisOne = document.getElementById("file-input");
+		EXIF.getData(thisOne, function() {
         
-         var imageOrientation = EXIF.getTag(this,"Orientation");
+         imageOrientation = EXIF.getTag(this,"Orientation");
          console.log('in function getImageOrientation ' + imageOrientation);
 
-         return imageOrientation;
+         
         
     });
 
 }
 
-function loadImageFileAsURL()
-{
+function loadImageFileAsURL(){
 	console.log('things');
+	var newBeforeImg = document.getElementById("img1");
+	console.log(  newBeforeImg.src);
     var filesSelected = document.getElementById("file-input").files;
-    console.log(filesSelected);
+    var raTilt = document.getElementById("alpha").value;
+    console.log('alpha');
+    console.log(raTilt);
+    console.log('filesSelected');
+    console.log( filesSelected);
+    
     if (filesSelected.length > 0)
     {
         var fileToLoad = filesSelected[0];
@@ -122,17 +113,41 @@ function loadImageFileAsURL()
             (
                 "textAreaFileContents"
             );
-     
+     		
+
             textAreaFileContents.innerHTML = fileLoadedEvent.target.result;
             var baser64 = fileLoadedEvent.target.result;
-            console.log(fileLoadedEvent.target.result);
+            originalImage.src = fileLoadedEvent.target.result;
+            console.log('baser64' + fileLoadedEvent.target.result);
+            
+           console.log(filesSelected[0].exifdata.Orientation);
+           var filesSelectedOrientation = filesSelected[0].exifdata.Orientation;
+
+            //
+            EXIF.getData(filesSelected, function() {
+        
+		         imageOrientation = EXIF.getTag(filesSelected,"Orientation");
+		         console.log('in function getImageOrientation ' + imageOrientation);
+
+		         
+		        
+		    });
+
+            //
+            resetOrientation(raTilt,originalImage.src, filesSelectedOrientation, function(resetBase64Image) {
+				resetImage.src = resetBase64Image;
+
+
+			});
         };
  
         fileReader.readAsDataURL(fileToLoad);
+
+
     }
 }
 
-function resetOrientation(srcBase64, srcOrientation, callback) {
+function resetOrientation(cameraTilt,srcBase64, srcOrientation, callback) {
 	var img = new Image();	
 
 	img.onload = function() {
@@ -152,18 +167,45 @@ function resetOrientation(srcBase64, srcOrientation, callback) {
     }
 	
   	// transform context before drawing image
-    console.log('x ' + srcOrientation);
+    console.log('srcOrientation ' + srcOrientation);
+
+    console.log('camera Orientation ' + cameraTilt);
    
-		switch (srcOrientation) {
-      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
-      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
-      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
-      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
-      case 6: ctx.transform(0, 1, -1, 0, height , 0); break;
-      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
-      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
-      default: ctx.transform(1, 0, 0, 1, 0, 0);
-    }
+
+
+    switch (cameraTilt){
+
+    	case '0':
+    		console.log('alpha: 0');
+			switch (srcOrientation) {// alpha of '0'
+		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
+		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
+		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
+		      case 6: ctx.transform(0, 1, -1, 0, height , 0); break;
+		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
+		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+		      default: ctx.transform(1, 0, 0, 1, 0, 0);
+		    }
+		   break;
+		case '90':
+    		console.log('alpha: 90');
+			switch (srcOrientation) {// alpha of '0'
+		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
+		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
+		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
+		      case 6: ctx.transform(1, 0, 0, 1, 0, 0); break;//works
+		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
+		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+		      default: ctx.transform(1, 0, 0, 1, 0, 0);
+		    }
+		   break;
+
+		default: 
+			console.log('defaultly');
+
+	}
 
 		// draw image
     ctx.drawImage(img, 0, 0);
@@ -175,21 +217,20 @@ function resetOrientation(srcBase64, srcOrientation, callback) {
 	img.src = srcBase64;
 }
 
-var resetImage = document.getElementById("image-reset");
-var originalImage = document.getElementById("img1");
-/*var originalImage = document.getElementById("image-original"),
-		resetImage = document.getElementById("image-reset");
-*/
 
-console.log('returngento' + getImageOrientation());
-resetOrientation(originalImage.src, getImageOrientation(), function(resetBase64Image) {
-	resetImage.src = resetBase64Image;
-});
-
+ console.log('orginal sause 2 ' + originalImage.src);
+// resetOrientation(originalImage.src, 1, function(resetBase64Image) {
+// 	resetImage.src = resetBase64Image;
+// }
+;
 
 </script>
 
 
 
 </body>
+
+
+
+
 </html>
