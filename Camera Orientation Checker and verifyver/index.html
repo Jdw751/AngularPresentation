@@ -38,6 +38,9 @@ After:
 if (window.DeviceOrientationEvent) {
  console.log("DeviceOrientation is supported");
 }
+else{
+	console.log("No support");
+}
 
 resetImage = document.getElementById("image-reset");
 originalImage = document.getElementById("img1");
@@ -179,54 +182,58 @@ function resetOrientation(cameraTilt,srcBase64, srcOrientation, callback) {
     switch (cameraTilt){
 
     	case '0':
-    		console.log('alpha: 0');
-			switch (srcOrientation) {// alpha of '0'
+    		console.log('gamma: 0');
+			switch (srcOrientation) {// portrait camera up right'
+			  case 1: ctx.transform(1, 0, 0, 1, 0, 0); break;//works
 		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
-		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;//works
 		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
 		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
-		      case 6: ctx.transform(0, 1, -1, 0, height , 0); break;//
+		      case 6: ctx.transform(0, 1, -1, 0, height , 0); break;//works
 		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
-		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;//works
 		      default: ctx.transform(1, 0, 0, 1, 0, 0);
 		    }
 		   break;
 		case '90':
-    		console.log('alpha: 90');
-			switch (srcOrientation) {// alpha of '90'
+    		console.log('gamma: 90');
+			switch (srcOrientation) {// clockwise 90 degrees'
+			  case 1: ctx.transform(0, -1, 1, 0, 0, width); break;//works?
 		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
-		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+		      case 3: ctx.transform(0, -1, 1, 0, 0, width); break;//works
 		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
 		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
-		      case 6: ctx.transform(1, 0, 0, 1, 0, 0); break;//works
+		      case 6: ctx.transform(-1, 0, 0, -1, width, height); break;//works 
 		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
-		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+		      case 8: ctx.transform(1, 0, 0, 1, 0, 0); break;
 		      default: ctx.transform(1, 0, 0, 1, 0, 0);
 		    }
 		   break;
 		case '180':
-    		console.log('alpha: 180');
-			switch (srcOrientation) {// alpha of '180'
+    		console.log('gamma: 180');
+			switch (srcOrientation) {// upside down'
+			  case 1: ctx.transform(-1, 0, 0, -1, width, height ); break;//works?
 		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
-		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+		      case 3: ctx.transform(1, 0, 0, 1, 0, 0); break;//works
 		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
 		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
 		      case 6: ctx.transform(0, -1, -1, 0, height , width); break;//works
 		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
-		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+		      case 8: ctx.transform(0, 1, -1, 0, height , 0); break;//works
 		      default: ctx.transform(1, 0, 0, 1, 0, 0);
 		    }
 		   break;
 		 case '270':
-    		console.log('alpha: 270');
-			switch (srcOrientation) {// alpha of '270 or -90'
+    		console.log('gamma: 270');
+			switch (srcOrientation) {// counterclockwise 90 degrees'
+			  case 1: ctx.transform(0, 1, -1, 0, height , 0); break;//works?
 		      case 2: ctx.transform(-1, 0, 0, 1, width, 0); break;
-		      case 3: ctx.transform(-1, 0, 0, -1, width, height ); break;
+		      case 3: ctx.transform(0, 1, -1, 0, height , 0); break;//works
 		      case 4: ctx.transform(1, 0, 0, -1, 0, height ); break;
 		      case 5: ctx.transform(0, 1, 1, 0, 0, 0); break;
-		      case 6: ctx.transform(-1, 0, 0, -1, width, height); break;//works
+		      case 6: ctx.transform(1, 0, 0, 1, 0, 0); break;//works
 		      case 7: ctx.transform(0, -1, -1, 0, height , width); break;
-		      case 8: ctx.transform(0, -1, 1, 0, 0, width); break;
+		      case 8: ctx.transform(-1, 0, 0, -1, width, height ); break;//works
 		      default: ctx.transform(1, 0, 0, 1, 0, 0);
 		    }
 		   break;
