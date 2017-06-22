@@ -96,6 +96,11 @@ http://www.apartmenttherapy.com/travel-lightly-our-5-best-pack-152349
 
 Suckers: How Alternative Medicine Makes Fools of Us All - Rose Shapiro
 
+*** https://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067
+*** https://www.html5rocks.com/en/tutorials/device/orientation/
+https://w3c.github.io/deviceorientation/spec-source-orientation.html#deviceorientation
+
+
 
 
 
