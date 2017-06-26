@@ -111,6 +111,8 @@ http://wellcaffeinated.net/demos/device-orientation
 
 https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-angle
 
+https://whatwebcando.today/device-orientation.html
+
 
 
 
