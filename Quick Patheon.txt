@@ -101,6 +101,9 @@ Suckers: How Alternative Medicine Makes Fools of Us All - Rose Shapiro
 https://w3c.github.io/deviceorientation/spec-source-orientation.html#deviceorientation
 https://github.com/Jdw751/deviceapi-normaliser
 **https://www.w3.org/TR/screen-orientation/
+***https://www.sitepoint.com/introducing-screen-orientation-api/
+
+
 
 
 
