@@ -105,6 +105,8 @@ https://github.com/Jdw751/deviceapi-normaliser
 
 http://www.mtgfanatic.com/Forum/ViewDiscussion.aspx?ID=81767&Page=1&PageSize=25
 
+https://www.sitepoint.com/introducing-screen-orientation-api/
+
 
 
 
