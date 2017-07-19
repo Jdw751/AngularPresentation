@@ -160,8 +160,8 @@ http://www.baeldung.com/java-aws-lambda
 https://www.javacodegeeks.com/2013/06/working-with-amazon-simple-queue-service-using-java.html
 https://aws.amazon.com/blogs/developer/invoking-aws-lambda-functions-from-java/
 http://www.dilek.me/java/aws/lambda/2016/05/05/AWS-Lambda-Java-Example/
-
-
+https://www.sumologic.com/aws/lambda/how-to-write-aws-lambda-function-in-java8/
+https://cloudacademy.com/blog/aws-lambda-java/
 
 
 
