@@ -160,6 +160,8 @@ http://www.baeldung.com/java-aws-lambda
 https://www.javacodegeeks.com/2013/06/working-with-amazon-simple-queue-service-using-java.html
 https://aws.amazon.com/blogs/developer/invoking-aws-lambda-functions-from-java/
 
+http://www.salon.com/2010/11/02/nanowrimo/
+
 ---------------///////
 
 
