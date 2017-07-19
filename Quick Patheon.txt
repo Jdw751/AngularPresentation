@@ -159,11 +159,14 @@ http://docs.aws.amazon.com/streams/latest/dev/amazon-kinesis-consumers.html
 http://www.baeldung.com/java-aws-lambda
 https://www.javacodegeeks.com/2013/06/working-with-amazon-simple-queue-service-using-java.html
 https://aws.amazon.com/blogs/developer/invoking-aws-lambda-functions-from-java/
+http://www.dilek.me/java/aws/lambda/2016/05/05/AWS-Lambda-Java-Example/
 
-http://www.salon.com/2010/11/02/nanowrimo/
+
+
+
 
 ---------------///////
-
+http://www.salon.com/2010/11/02/nanowrimo/
 
 
 
