@@ -158,7 +158,7 @@ http://docs.aws.amazon.com/lambda/latest/dg/java-handler-io-type-pojo.html
 http://docs.aws.amazon.com/streams/latest/dev/amazon-kinesis-consumers.html
 http://www.baeldung.com/java-aws-lambda
 https://www.javacodegeeks.com/2013/06/working-with-amazon-simple-queue-service-using-java.html
-
+https://aws.amazon.com/blogs/developer/invoking-aws-lambda-functions-from-java/
 
 ---------------///////
 
