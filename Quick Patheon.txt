@@ -175,4 +175,8 @@ I have heard vague rumors of a moustache-dispensing vending machine in a distant
 
 http://www.dilek.me/gradle/aws/lambda/2016/05/04/AWS-Lambda-Project-with-Gradle/
 
+http://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+
+
+
 
