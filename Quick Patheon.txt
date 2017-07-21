@@ -173,4 +173,6 @@ https://movies.stackexchange.com/questions/76444/patrick-stewart-film-with-naked
 I have heard vague rumors of a moustache-dispensing vending machine in a distant laundromat, across the street from a tattoo parlor. However, this information is shaky, and time is of the essence.
 
 
+http://www.dilek.me/gradle/aws/lambda/2016/05/04/AWS-Lambda-Project-with-Gradle/
+
 
