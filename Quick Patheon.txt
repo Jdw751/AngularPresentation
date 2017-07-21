@@ -181,5 +181,8 @@ https://www.sumologic.com/aws/lambda/how-to-write-aws-lambda-function-in-java8/
 
 https://stackoverflow.com/questions/20560409/how-to-send-a-receive-a-java-object-from-amazon-sqs
 
+http://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html
+
+
 
 
