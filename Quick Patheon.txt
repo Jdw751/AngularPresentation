@@ -177,6 +177,8 @@ http://www.dilek.me/gradle/aws/lambda/2016/05/04/AWS-Lambda-Project-with-Gradle/
 
 http://docs.aws.amazon.com/lambda/latest/dg/welcome.html
 
+https://www.sumologic.com/aws/lambda/how-to-write-aws-lambda-function-in-java8/
+
 
 
 
