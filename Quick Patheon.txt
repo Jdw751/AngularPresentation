@@ -246,5 +246,8 @@ https://www.pinterest.com/pin/440086194815560539/
 
 https://programtalk.com/vs/spring-cloud-sleuth/spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/messaging/MessagingSpanExtractor.java/#
 
+https://www.reddit.com/r/mtgfinance/comments/24mwh4/booster_box_expected_values/
+
+
 
 
