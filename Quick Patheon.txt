@@ -270,7 +270,7 @@ https://en.wikipedia.org/wiki/Toyland_(film)
 
 Stars in Shorts
 
-
+http://cloud.spring.io/spring-cloud-static/Dalston.RELEASE/#_customizations
 
 
 
