@@ -295,6 +295,6 @@ https://en.wikipedia.org/wiki/Nonlinear_gameplay#Role-playing_games
 https://www.csicop.org/specialarticles/show/an_interview_with_csicon_speaker_kavin_senapathy
 
 
-
+https://programtalk.com/vs/spring-cloud-sleuth/spring-cloud-sleuth-core/src/main/java/org/springframework/cloud/sleuth/instrument/messaging/MessagingSpanExtractor.java/#
 
 
