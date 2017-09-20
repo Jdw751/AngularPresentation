@@ -315,6 +315,8 @@ http://www.xe.com/currencytrading/questions.php
 
 Testosterone Rex: Myths of Sex, Science and Society, by Cordelia Fine
 
+https://martinfowler.com/bliki/CircuitBreaker.html
+
 
 
 
