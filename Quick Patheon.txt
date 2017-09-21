@@ -318,7 +318,9 @@ Testosterone Rex: Myths of Sex, Science and Society, by Cordelia Fine
 https://martinfowler.com/bliki/CircuitBreaker.html
 
 
-
+----
+Murder mystery, each person at the table eats the food, everyone dies except one person. The reason: the silverware has the poison on it and the person is also immune to that particular poison. So even if they accidently ingested the poison it would not effect them. 
+----
 
 
 
