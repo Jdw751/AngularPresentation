@@ -332,6 +332,8 @@ https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=35&cad=rja&uact=8&
 
 https://dzone.com/articles/the-netflix-stack-using-spring-boot-part-2-hystrix?fromrel=true
 
+http://brianknapp.me/side-business-make-1000-2000-week/
+
 
 
 
