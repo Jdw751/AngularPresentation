@@ -338,6 +338,10 @@ https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=13&cad=rja&uact=8&
 
 http://blog.mtgprice.com/2016/07/24/protrader-why-the-rich-are-getting-richer/
 
+https://developer.okta.com/blog/2017/06/15/build-microservices-architecture-spring-boot
+
+
+
 
 
 
