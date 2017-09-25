@@ -340,7 +340,7 @@ http://blog.mtgprice.com/2016/07/24/protrader-why-the-rich-are-getting-richer/
 
 https://developer.okta.com/blog/2017/06/15/build-microservices-architecture-spring-boot
 
-
+http://blog.mtgprice.com/category/protrader/
 
 
 
