@@ -369,8 +369,11 @@ spiced masala tea
 
 https://github.com/s3tools/s3cmd
 
+http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html
 
+http://docs.aws.amazon.com/cli/latest/userguide/using-s3api-commands.html
 
+https://tecadmin.net/s3cmd-file-sync-with-s3bucket/
 
 
 
