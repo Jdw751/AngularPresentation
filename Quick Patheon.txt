@@ -396,6 +396,7 @@ http://smallbusiness.chron.com/put-money-prepaid-american-express-card-paypal-50
 
 http://blog.bimarian.com/sync-windows-folder-with-aws-s3-bucket/
 
+https://www.addictivetips.com/windows-tips/sync-files-between-amazon-s3-local-drive-with-amazon-s3-filesync/
 
 
 
