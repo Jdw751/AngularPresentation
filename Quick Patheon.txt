@@ -394,7 +394,7 @@ http://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-s3-objects.h
 
 http://smallbusiness.chron.com/put-money-prepaid-american-express-card-paypal-50335.html
 
-
+http://blog.bimarian.com/sync-windows-folder-with-aws-s3-bucket/
 
 
 
