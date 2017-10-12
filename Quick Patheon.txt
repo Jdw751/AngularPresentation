@@ -418,6 +418,10 @@ https://www.tutorialspoint.com/ejb/ejb_create_application.htm
 
 https://www.tutorialspoint.com/struts_2/struts_architecture.htm
 
+http://blog.mtgprice.com/2015/05/27/dealing-with-150000-bulk-commons/
+http://blog.mtgprice.com/tag/bulk-commons-and-uncommons/
+https://www.reddit.com/r/mtgfinance/comments/4s2f6p/where_to_sell_bulk_commons/
+http://www.starcitygames.com/article/25704_Cutting-Your-Giant-Collection-Down-To-Size.html
 
 
 -
