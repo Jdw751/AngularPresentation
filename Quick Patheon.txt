@@ -454,6 +454,7 @@ http://brianknapp.me/what-is-the-best-prepaid-smartphone/
 
 
 ***https://www.howtogeek.com/51236/how-to-create-modify-and-delete-scheduled-tasks-from-the-command-line/
+***https://www.howtogeek.com/263177/how-to-write-a-batch-script-on-windows/
 
 
 
