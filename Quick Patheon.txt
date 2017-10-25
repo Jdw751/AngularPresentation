@@ -459,4 +459,4 @@ https://www.howtogeek.com/200962/how-to-find-and-remove-duplicate-files-on-windo
 https://en.wikipedia.org/wiki/Post-truth_politics
 https://en.wikipedia.org/wiki/Wronger_than_wrong
 https://lifehacker.com/use-group-policy-editor-to-run-scripts-when-shutting-do-980849001
-
+https://stackoverflow.com/questions/12434863/executing-a-batch-script-on-windows-shutdown
