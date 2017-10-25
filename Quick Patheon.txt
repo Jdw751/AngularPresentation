@@ -461,7 +461,7 @@ https://en.wikipedia.org/wiki/Wronger_than_wrong
 https://lifehacker.com/use-group-policy-editor-to-run-scripts-when-shutting-do-980849001
 https://stackoverflow.com/questions/12434863/executing-a-batch-script-on-windows-shutdown
 https://stackoverflow.com/questions/24341124/how-to-run-a-bat-file-before-windows-shut-down?noredirect=1&lq=1
-
+https://www.tutorialspoint.com/batch_script/batch_script_comments.htm
 
 
 
