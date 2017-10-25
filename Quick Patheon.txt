@@ -463,7 +463,7 @@ https://stackoverflow.com/questions/12434863/executing-a-batch-script-on-windows
 https://stackoverflow.com/questions/24341124/how-to-run-a-bat-file-before-windows-shut-down?noredirect=1&lq=1
 https://www.tutorialspoint.com/batch_script/batch_script_comments.htm
 https://www.wikihow.com/Write-a-Batch-File
-
+https://french.stackexchange.com/questions/27681/vulgar-expression-for-in-big-trouble
 
 
 
