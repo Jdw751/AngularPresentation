@@ -503,7 +503,7 @@ https://www.reddit.com/r/Windows10/comments/3keht2/here_is_a_batch_file_i_made_t
 
 https://www.tutorialspoint.com/batch_script/batch_script_comments.htm
 
-
+https://social.microsoft.com/Forums/en-US/b2600c64-7b2a-4bd8-8927-493c09193918/script-to-install-windows-updates-but-do-not-restart?forum=Offtopic
 
 
 
