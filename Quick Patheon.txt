@@ -499,5 +499,6 @@ https://zenhabits.net/procrastination-fears/
 
 http://www.msfn.org/board/topic/152020-batch-script-for-windows-software-updates-installation/
 
+https://www.reddit.com/r/Windows10/comments/3keht2/here_is_a_batch_file_i_made_to_easily_change/
 
 
