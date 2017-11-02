@@ -512,7 +512,7 @@ https://venturebeat.com/2015/07/28/how-to-force-windows-to-start-downloading-the
 
 https://www.interfacett.com/blogs/how-to-determine-if-a-specific-kb-windows-update-has-been-applied-to-your-computer/
 
-
+https://kickthatcomputer.wordpress.com/2013/03/06/windows-update-command-line-options/
 
 
 
