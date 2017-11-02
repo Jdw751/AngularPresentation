@@ -506,6 +506,13 @@ https://www.tutorialspoint.com/batch_script/batch_script_comments.htm
 https://social.microsoft.com/Forums/en-US/b2600c64-7b2a-4bd8-8927-493c09193918/script-to-install-windows-updates-but-do-not-restart?forum=Offtopic
 
 
+https://community.spiceworks.com/topic/123043-can-windows-updates-be-done-via-command-line
+
+https://venturebeat.com/2015/07/28/how-to-force-windows-to-start-downloading-the-windows-10-update-files/
+
+
+
+
 
 
 
