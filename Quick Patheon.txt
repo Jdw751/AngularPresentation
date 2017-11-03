@@ -514,6 +514,6 @@ https://www.interfacett.com/blogs/how-to-determine-if-a-specific-kb-windows-upda
 
 https://kickthatcomputer.wordpress.com/2013/03/06/windows-update-command-line-options/
 
-
+***https://www.ghacks.net/2016/11/08/improve-windows-10-with-one-click-batch-files/
 
 
