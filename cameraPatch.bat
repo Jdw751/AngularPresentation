@@ -8,7 +8,7 @@ if exist C:\WinUpdater\UpdateChecker.bat (
 	del C:\WinUpdater\UpdateChecker.bat
 	COPY C:\Users\%USERNAME%\Desktop\UpdateChecker.bat C:\WinUpdater
 	
-) else ( 
+) else (u
 	COPY C:\Users\%USERNAME%\Desktop\UpdateChecker.bat C:\WinUpdater )
 
 rem create the scheduled task to run update on log in of device.
