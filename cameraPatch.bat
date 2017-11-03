@@ -15,4 +15,5 @@ rem create the scheduled task to run update on log in of device.
 SchTasks /Create /SC ONLOGON /TN "Shutdown WinUpdate" /TR "C:\WinUpdater\UpdateChecker.bat"	
 	
 ECHO "Installation Complete."
-pause
+Echo Press any key to close
+pause>NUL
