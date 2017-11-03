@@ -517,3 +517,13 @@ https://kickthatcomputer.wordpress.com/2013/03/06/windows-update-command-line-op
 ***https://www.ghacks.net/2016/11/08/improve-windows-10-with-one-click-batch-files/
 
 
+https://deploywindows.info/2015/10/27/start-windows-update-scan-with-windows-10/
+
+
+
+
+
+
+
+
+
