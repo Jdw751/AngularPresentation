@@ -519,7 +519,7 @@ https://kickthatcomputer.wordpress.com/2013/03/06/windows-update-command-line-op
 
 https://deploywindows.info/2015/10/27/start-windows-update-scan-with-windows-10/
 
-
+https://www.interfacett.com/blogs/how-to-determine-if-a-specific-kb-windows-update-has-been-applied-to-your-computer/
 
 
 
