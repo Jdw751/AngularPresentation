@@ -1,12 +1,4 @@
 
-C:\Windows\System32\wuauclt.exe  
-pause
-
-C:\Windows\System32\wuauclt.exe  /detectnow /showwuautoscan
-pause
-
-
-
 rem C:\Windows\System32\wuauclt.exe  
 rem C:\Windows\System32\systeminfo.exe
 set theOne = C:\Windows\System32\systeminfo.exe | findstr KB4041676
