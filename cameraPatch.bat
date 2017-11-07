@@ -4,11 +4,10 @@ MKDIR C:\WinUpdater
 
 rem COPY C:\Users\%USERNAME%\Desktop\UpdateChecker.bat C:\WinUpdater
 if exist C:\WinUpdater\UpdateChecker.bat (
-	rem delete old file and replace with newest one.
+	rem delete old file and replace with newest one. Change to REPLACE 
 	del C:\WinUpdater\UpdateChecker.bat
 	COPY C:\Users\%USERNAME%\Desktop\UpdateChecker.bat C:\WinUpdater
-	
-) else (u
+) else ( 
 	COPY C:\Users\%USERNAME%\Desktop\UpdateChecker.bat C:\WinUpdater )
 
 rem create the scheduled task to run update on log in of device.
