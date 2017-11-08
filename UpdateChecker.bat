@@ -11,9 +11,5 @@ if %ERRORLEVEL% EQU 0 (
 rem runs a check for updates. 
 rem %windir%\explorer.exe ms-settings:windowsupdate-action
 
-echo.
-echo ###########################################################
-echo.
-echo Updates installed
-echo press any key to close
-pause >NUL
+
+timeout 2>NUL
