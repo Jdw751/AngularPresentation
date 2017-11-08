@@ -570,6 +570,6 @@ https://stackoverflow.com/questions/8055371/how-do-i-run-two-commands-in-one-lin
 
 http://www.dostips.com/DosCommandIndex.php
 
-
+http://www.squidworks.net/2011/05/how-to-close-cmd-or-command-window-after-executing-a-program/
 
 
