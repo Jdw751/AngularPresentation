@@ -573,3 +573,8 @@ http://www.dostips.com/DosCommandIndex.php
 http://www.squidworks.net/2011/05/how-to-close-cmd-or-command-window-after-executing-a-program/
 
 https://www.techjunkie.com/speed-up-windows-10/
+
+
+https://superuser.com/questions/727724/close-programs-from-the-command-line-windows
+
+
