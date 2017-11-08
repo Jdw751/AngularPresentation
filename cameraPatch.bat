@@ -11,7 +11,7 @@ if exist C:\WinUpdater\UpdateChecker.bat (
 	COPY C:\Users\%USERNAME%\Desktop\UpdateChecker.bat C:\WinUpdater )
 
 rem create the scheduled task to run update on log in of device.
-SchTasks /Create /SC ONLOGON /TN "Shutdown WinUpdate" /TR "C:\WinUpdater\UpdateChecker.bat"	
+SchTasks /Create /SC ONLOGON /TN "Log On WinUpdate" /TR "C:\WinUpdater\UpdateChecker.bat"	
 	
 ECHO "Installation Complete."
 Echo Press any key to close
