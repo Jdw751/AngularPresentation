@@ -5,11 +5,7 @@ rem start /b cmd.exe /k "Wmic.exe /Namespace:\\root\default Path SystemRestore C
 rem if update success, runs a check for updates. 
 
 if %ERRORLEVEL% EQU 0 (
-	%windir%\explorer.exe ms-settings:windowsupdate-action
+	cmd /c %windir%\explorer.exe ms-settings:windowsupdate-action
 ) 
-
-rem runs a check for updates. 
-rem %windir%\explorer.exe ms-settings:windowsupdate-action
-
 
 timeout 2>NUL
