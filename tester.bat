@@ -1,12 +1,20 @@
+@echo off
 
 
-rem C:\Windows\System32\systeminfo.exe
-set theOne = C:\Windows\System32\systeminfo.exe | findstr KB4041676
-pause
-if exist %theOne%(
-	echo Found it 
-	echo %theOne% )
-pause
+start /b cmd.exe /k "Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "%DATE% ", 100, 7" 
 
-rem C:\Windows\System32\wuauclt.exe  /detectnow /showwuautoscan /updatenow
-rem pause
+
+if %ERRORLEVEL% EQU 0 ( 
+	%windir%\explorer.exe ms-settings:windowsupdate-action
+	
+) else ( 
+	rem run a quick trouble shoot cleaning
+	net stop wuauserv
+	pause
+	net start wuauserv
+)
+
+
+rem %windir%\explorer.exe ms-settings:windowsupdate-action
+ECHO "Installation Complete."
+pause >NUL
