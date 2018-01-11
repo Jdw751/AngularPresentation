@@ -1,0 +1,7 @@
+Training Dummy
+0
+0/1
+Artifact Creature
+Flash
+When TD enters the battlefield, gain one life.
+If TD Blocks deal 1 damage to blocked creature.
