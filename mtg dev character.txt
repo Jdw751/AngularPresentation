@@ -3,5 +3,7 @@ Training Dummy
 0/1
 Artifact Creature
 Flash
-When TD enters the battlefield, gain one life.
+
 If TD Blocks deal 1 damage to blocked creature.
+
+While choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.
