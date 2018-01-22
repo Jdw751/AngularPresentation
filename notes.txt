@@ -1,0 +1,3 @@
+X321775
+
+"%d | %-5level | %40.40c{2} | %25.25M-%5.5L | %msg%n | bio-ipp, trace: %X{X-B3-TraceId:-} span: %X{X-B3-SpanId:-} "

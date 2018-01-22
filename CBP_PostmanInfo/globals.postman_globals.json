@@ -1,0 +1,63 @@
+{
+  "id": "479053e9-e5e3-23f3-aebd-8a775c33a010",
+  "name": "Postman Globals",
+  "values": [
+    {
+      "key": "internalAuth",
+      "value": "",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "externalAuth",
+      "value": "",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "staging",
+      "value": "dev.",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "NecUrl",
+      "value": "dev-aimesc-elb-2056383514.us-east-1.elb.amazonaws.com:8080",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "NecUrl-aws-dev",
+      "value": "dev-aimesc-elb-2056383514.us-east-1.elb.amazonaws.com:8080",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "NecUrl-aws-sat",
+      "value": "sat-aimesc-elb-1917742897.us-east-1.elb.amazonaws.com",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "NecUrl-dev-165",
+      "value": "10.158.67.165:8082",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "NecUrl-dev-166",
+      "value": "10.158.67.166:8082",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "NecUrl-aws-prod",
+      "value": "",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2017-04-28T17:05:46.970Z",
+  "_postman_exported_using": "Postman/4.10.7"
+}
