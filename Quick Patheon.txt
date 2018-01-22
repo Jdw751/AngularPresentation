@@ -1096,7 +1096,16 @@ http://abc7.com/travel/lax-airline-using-facial-recognition-for-boarding/2966266
 
 https://en.wikipedia.org/wiki/Sergei_Eisenstein
 
+----
+https://summit.cbp.dhs.gov/summit/web/scripts/php/main.php?tab=home
+https://jira.cbp.dhs.gov/secure/Dashboard.jspa
+https://stash.cbp.dhs.gov/projects
+https://snts2-s110.cbp.dhs.gov:12285/pax/bio/summary.do
+https://confluence.cbp.dhs.gov/#all-updates
 
+
+
+----
 
 
 
