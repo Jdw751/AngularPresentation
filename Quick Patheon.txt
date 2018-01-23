@@ -1112,5 +1112,31 @@ https://mv.force.com/revature/reLogin
 https://www.mtggoldfish.com/articles/sorry-i-didn-t-finish-your-land-cycle-part-2
 
 
+---
+http://www.itninja.com/question/determine-if-hotfix-is-applied-via-batch-file-1
+https://www.interfacett.com/blogs/how-to-determine-if-a-specific-kb-windows-update-has-been-applied-to-your-computer/
+http://lallouslab.net/2017/08/28/zipping-all-files-in-a-git-repository/
+http://lallouslab.net/2016/07/11/batchography-how-to-check-if-your-batch-file-script-is-running-as-an-administrator/
+http://lallouslab.net/2016/05/10/batchography/
+http://lallouslab.net/2016/12/21/batchography-switch-case/
+https://stackoverflow.com/questions/18866089/reading-a-text-file-line-by-line-and-storing-it-in-an-array-using-batch-script
+https://stackoverflow.com/questions/206114/batch-files-how-to-read-a-file
+https://www.google.com/search?q=batch+file+to+install+windows+updates&rlz=1C1GGRV_enUS752US752&ei=07xgWsybBo6yjwPI8bmgBQ&start=0&sa=N&biw=1680&bih=957
+
+https://support.microsoft.com/en-us/help/296861/how-to-install-multiple-windows-updates-or-hotfixes-with-only-one-rebo
+https://www.experts-exchange.com/questions/29001605/Windows-Updates-Batch-Files-now-with-executables.html
+https://rakhesh.com/windows/get-a-list-of-recently-installed-windows-updates-via-the-command-line/
+https://social.technet.microsoft.com/Forums/windowsserver/en-US/edaac7af-d67f-4162-85ec-c24a78edaf03/commandprompt-to-check-installed-windows-updates?forum=winserverManagement
+http://inanecoding.co.uk/2011/06/simple-user-input-in-batch-files/
+
+https://support.microsoft.com/en-us/help/4041676/windows-10-update-kb4041676
+https://www.bleepingcomputer.com/news/security/microsoft-quietly-patched-the-krack-wpa2-vulnerability-last-week/
+
+
+
+
+
+
+
 
 
