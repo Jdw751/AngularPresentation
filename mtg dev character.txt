@@ -7,3 +7,12 @@ Flash
 If TD Blocks deal 1 damage to blocked creature.
 
 While choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.
+
+
+
+Glance
+0 (Blue)
+Instanst
+
+Look at target player's hand. That player then draws a card. 
+
