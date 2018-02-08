@@ -1226,3 +1226,5 @@ https://blag.kazeno.net/solutions/uninstall-windows-updates
 
 http://dhsconnect.dhs.gov/org/comp/mgmt/cio/itso/Pages/workplacevirtualdesktop_home.aspx
 
+https://www.symantec.com/connect/articles/nice-batch-script-deploy-windows-updates
+
