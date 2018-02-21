@@ -4,8 +4,15 @@ Training Dummy
 Artifact Creature
 Flash
 
-If TD Blocks deal 1 damage to blocked creature.
+If TD Blocks deals 1 additional damage to blocked creature.
 
+---
+
+Decoy Dummy
+1
+0/1
+Artifact Creature
+Flash
 While choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.
 
 ----
