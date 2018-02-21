@@ -22,8 +22,8 @@ Instant
 
 Tap target or counter activateed ability of one non-artfact creature or planeswalker. Exile Pocket Sand
 -----
-Retort
-2UU
+Hegemonic Retort
+2UUU
 
 Instant
 Put target spell on the top of the stack. Exile Retort
