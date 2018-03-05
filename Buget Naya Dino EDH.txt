@@ -4,4 +4,7 @@
 1 Battlefield Forge
 1 Brushland
 1 Karplusan Forest
-1 Terramorphic Expanse  
+1 Terramorphic Expanse 
+Hurricane
+
+
