@@ -1,4 +1,4 @@
-1 Thuderscape Familar 
+1 Thuderscape Familar (opt)
 1 Congregation at Dawn
 1 Naya Charm
 1 Battlefield Forge
@@ -10,7 +10,8 @@ Tremor
 pillar of origin
 Krosan Grip
 Domri Rade
-
+Chandra's Ignition
+Thornscape Familiar
 
 
 
