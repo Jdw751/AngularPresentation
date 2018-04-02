@@ -1276,3 +1276,5 @@ https://deckbox.org/sets/1964463
 
 http://www.starcitygames.com/article/26501_So-You-Wanna-Build-a-Sliver-Commander-Deck.html
 
+https://www.developer.com/java/other/article.php/3441391/Processing-Image-Pixels-Using-Java-Controlling-Contrast-and-Brightness.htm
+
