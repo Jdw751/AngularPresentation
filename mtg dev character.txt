@@ -3,34 +3,5 @@ Training Dummy
 0/1
 Artifact Creature
 Flash
-
-If TD Blocks deals 1 additional damage to blocked creature.
-
----
-
-Decoy Dummy
-1
-0/1
-Artifact Creature
-Flash
-While choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.
-
-----
-
-Glance
-0 (Blue)
-Instanst
-
-Look at target player's hand. That player then draws a card. 
-----
-Pocket Sand
-0
-Instant
-
-Tap target or counter activateed ability of one non-artfact creature or planeswalker. Exile Pocket Sand
------
-Hegemonic Retort
-2UUU
-
-Instant
-Put target spell on the top of the stack. Exile Retort
+When TD enters the battlefield, gain one life.
+If TD Blocks deal 1 damage to blocked creature.
