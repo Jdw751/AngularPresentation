@@ -4,3 +4,12 @@ Commander
 5 boardwipes
 10 ramp
 10 draw effects
+
+50 mana: lands and ramp, usually a 38–12 split
+10 sources of "card advantage;" I use this term loosely but am mostly looking for card draw or any spell that nets me 2+ non-land cards in hand / directly into play
+6 single target removal, split between creature / artifact / enchantment removal
+3 board wipes
+2 recursion
+2 flexible tutors
+1 graveyard hate
+1 surprise "I Win" card
