@@ -1,0 +1,10 @@
+1 Bayou
+1 Tundra
+1 Underground Sea
+1 Badlands		X
+1 Taiga
+1 Savannah           	X
+1 Scrubland		X
+1 Tropical Island
+1 Volcanic Island
+1 Plateau
