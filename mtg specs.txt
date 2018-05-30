@@ -23,5 +23,10 @@ Precognition
 ----
  others
  
+ --Nicol Bolas EDH deck upgrades--
  Halimar Depths
  Night's Whipser
+Eater of the Dead
+Necrotic ooze
+
+
