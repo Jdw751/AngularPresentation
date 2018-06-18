@@ -5,4 +5,5 @@
 1 Underground Sea
 1 Volcanic Island
 
-	Conjurer's Bauble
+Conjurer's Bauble
+Life-Death
