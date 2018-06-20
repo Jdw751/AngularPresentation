@@ -13,5 +13,6 @@ mental missteap
 ---preorder
 Sarkhan's unsealing
 Goreclaw, terror of Qal sisma
+Nicol Bolas, the Ravager
 
 
