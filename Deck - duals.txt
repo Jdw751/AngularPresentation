@@ -1,6 +1,6 @@
 
 1 Bayou
-1 Tropical Island
+1 Tropical Island x
 1 Tundra
 1 Underground Sea
 1 Volcanic Island
