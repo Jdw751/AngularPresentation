@@ -5,6 +5,6 @@
 1 Taiga
 1 Savannah           	X
 1 Scrubland		X
-1 Tropical Island
+1 Tropical Island X
 1 Volcanic Island
 1 Plateau
