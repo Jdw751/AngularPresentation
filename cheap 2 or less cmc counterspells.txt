@@ -1,0 +1,13 @@
+-<=2 cmc
+-$1.00
+
+-----
+dispel
+prohibit
+negate
+disdainful stroke
+stubborn denial
+envelop
+abjure
+deprive
+
