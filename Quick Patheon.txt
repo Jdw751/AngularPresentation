@@ -1434,3 +1434,5 @@ www.afghanbistro.com
 
 https://ponyfoo.com/articles/json-web-tokens-vs-session-cookies
 
+http://www.latimes.com/business/la-fi-travel-briefcase-tsa-cbp-biometric-20180831-story.html
+
