@@ -1,9 +1,0 @@
-[
-  {
-    "carrierCode": "AA",
-    "departureDate": "20180524",
-    "departurePort": "IAD",
-    "flightNumber": "999",
-    "selected": true
-  }
-]
