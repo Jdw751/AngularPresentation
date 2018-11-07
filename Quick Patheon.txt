@@ -1436,3 +1436,5 @@ https://ponyfoo.com/articles/json-web-tokens-vs-session-cookies
 
 http://www.latimes.com/business/la-fi-travel-briefcase-tsa-cbp-biometric-20180831-story.html
 
+http://tappedout.net/mtg-decks/mh-board-wipe/
+
