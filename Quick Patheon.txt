@@ -1459,3 +1459,10 @@ https://www.reddit.com/r/magicTCG/comments/a0dk5o/mtg_game_night_sleeves/
 https://en.wikipedia.org/wiki/Fe_del_Mundo
 
 https://en.wikipedia.org/wiki/Autre_Ne_Veut#Albums
+
+
+https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm
+https://developers.google.com/web/fundamentals/media/capturing-images/
+https://tutorialzine.com/2016/07/take-a-selfie-with-js
+https://davidwalsh.name/browser-camera
+https://www.w3schools.com/jsref/obj_touchevent.asp
