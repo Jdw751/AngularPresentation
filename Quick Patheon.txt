@@ -1466,5 +1466,6 @@ https://developers.google.com/web/fundamentals/media/capturing-images/
 https://tutorialzine.com/2016/07/take-a-selfie-with-js
 https://davidwalsh.name/browser-camera
 https://www.w3schools.com/jsref/obj_touchevent.asp
+https://webgazer.cs.brown.edu/
 
 https://www.reddit.com/r/CompetitiveEDH/comments/a1xnmt/7_introductory_concepts_for_cedh/
