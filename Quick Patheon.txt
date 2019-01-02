@@ -1474,3 +1474,10 @@ https://jsfiddle.net/awolf2904/qww6g0a6/
 https://simpl.info/getusermedia/sources/
 
 
+https://googlechrome.github.io/samples/image-capture/index.html
+
+
+
+
+
+
