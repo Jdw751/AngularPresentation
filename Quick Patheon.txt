@@ -1484,4 +1484,7 @@ http://docs.w3cub.com/dom/mediadevices/enumeratedevices/
 
 https://webrtchacks.com/guide-to-safari-webrtc/
 
+https://paul.kinlan.me/face-detection/
+
+
 
