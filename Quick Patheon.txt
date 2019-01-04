@@ -1482,6 +1482,6 @@ https://stackoverflow.com/questions/39854891/how-to-save-an-image-with-css-filte
 
 http://docs.w3cub.com/dom/mediadevices/enumeratedevices/
 
-
+https://webrtchacks.com/guide-to-safari-webrtc/
 
 
