@@ -1486,5 +1486,5 @@ https://webrtchacks.com/guide-to-safari-webrtc/
 
 https://paul.kinlan.me/face-detection/
 
-
+https://www.kirupa.com/html5/ken_burns_effect_css.htm
 
