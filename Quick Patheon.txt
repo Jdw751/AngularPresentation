@@ -1480,4 +1480,8 @@ https://whatwebcando.today/photos.html
 
 https://stackoverflow.com/questions/39854891/how-to-save-an-image-with-css-filter-applied
 
+http://docs.w3cub.com/dom/mediadevices/enumeratedevices/
+
+
+
 
