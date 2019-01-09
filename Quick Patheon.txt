@@ -1490,3 +1490,6 @@ https://www.kirupa.com/html5/ken_burns_effect_css.htm
 
 https://np.reddit.com/r/magicTCG/comments/999lff/my_statement_and_commitment_to_the_magic_community/e4m7r1r/
 
+https://wesbos.com/html5-video-face-detection-canvas-javascript/
+
+
