@@ -1493,3 +1493,6 @@ https://np.reddit.com/r/magicTCG/comments/999lff/my_statement_and_commitment_to_
 https://wesbos.com/html5-video-face-detection-canvas-javascript/
 
 https://scrawlon.com/2015/07/26/control-your-webcam-with-html-and-javascript/
+
+https://x-team.com/blog/webcam-capture-vue/
+
