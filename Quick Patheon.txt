@@ -1497,3 +1497,6 @@ https://scrawlon.com/2015/07/26/control-your-webcam-with-html-and-javascript/
 https://x-team.com/blog/webcam-capture-vue/
 
 https://paul.kinlan.me/face-detection/
+
+https://www.codepool.biz/javascript-html-webcam-stream-control.html
+
