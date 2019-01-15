@@ -1500,3 +1500,5 @@ https://paul.kinlan.me/face-detection/
 
 https://www.codepool.biz/javascript-html-webcam-stream-control.html
 
+https://revealjs.herokuapp.com/#/
+
