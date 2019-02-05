@@ -1509,3 +1509,5 @@ https://www.html5rocks.com/en/tutorials/canvas/imagefilters/
 
 https://blog.webkid.io/image-processing-in-javascript/
 
+https://makitweb.com/how-to-capture-picture-from-webcam-with-webcam-js/
+
