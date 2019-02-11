@@ -1,0 +1,64 @@
+<!-- CSS -->
+<style>
+#my_camera{
+ width: 320px;
+ height: 240px;
+ border: 1px solid black;
+}
+</style>
+
+<div id="my_camera"></div>
+
+<div id="my_camera2"></div>
+<input type=button value="Play" onClick="playCamera()">
+<input type=button value="Pause" onClick="pauseCamera()">
+
+<input type=button value="Take Snapshot" onClick="take_snapshot()">
+ 
+<div id="results" ></div>
+ 
+<!-- Webcam.min.js -->
+<script type="text/javascript" src="webby.js"></script>
+
+<!-- Configure a few settings and attach camera -->
+<script language="JavaScript">
+ Webcam.set({
+  width: 320,
+  height: 240,
+  image_format: 'jpeg',
+  jpeg_quality: 90
+ });
+ Webcam.attach( '#my_camera' );
+ Webcam.attach( '#my_camera2' );
+
+<!-- Code to handle taking the snapshot and displaying it locally -->
+function take_snapshot() {
+ 
+ // take snapshot and get image data
+ Webcam.snap( function(data_uri) {
+  // display results in page
+  document.getElementById('results').innerHTML = 
+  '<img src="'+data_uri+'"/>';
+  } );
+}
+
+
+function pauseCamera(){///testing  streams only working with one webcam stream
+		//
+
+		console.log("pause" );
+		Webcam.freeze();
+		
+		
+	}
+function playCamera(){///testing  streams only working with one webcam stream
+		//
+
+		console.log("play" );
+		Webcam.unfreeze();
+		
+		
+	}
+
+	////////End
+</script>
