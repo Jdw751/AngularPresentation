@@ -1519,3 +1519,6 @@ https://en.wikipedia.org/wiki/Olga_Ladyzhenskaya
 
 Seiichi Miyake
 
+https://www.javacodegeeks.com/2014/09/jquery-ajax-servlets-integration-building-a-complete-application.html
+
+
