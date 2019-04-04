@@ -1522,3 +1522,5 @@ Seiichi Miyake
 https://www.javacodegeeks.com/2014/09/jquery-ajax-servlets-integration-building-a-complete-application.html
 
 
+https://www.themuse.com/advice/perfect-pitch-how-to-nail-your-elevator-speech
+
