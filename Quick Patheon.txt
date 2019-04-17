@@ -1542,3 +1542,5 @@ https://budgeting.thenest.com/cheapest-time-year-buy-laptop-31685.html
 https://lifehacker.com/the-best-times-to-buy-a-laptop-in-two-charts-1767247363
 https://www.techradar.com/news/mobile-computing/laptops/best-laptops-1304361
 --------------
+
+https://github.com/jhuckaby/webcamjs
