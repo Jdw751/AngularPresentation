@@ -1532,6 +1532,7 @@ https://itnext.io/face-api-js-javascript-api-for-face-recognition-in-the-browser
 *******
 http://raphaeljs.com/
 https://dmitrybaranovskiy.github.io/raphael/
+https://code.tutsplus.com/tutorials/an-introduction-to-the-raphael-js-library--net-7186
 ----
 
 https://www.laptopmag.com/articles/when-to-buy-a-laptop
