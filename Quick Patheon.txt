@@ -1543,6 +1543,7 @@ https://lifehacker.com/the-best-times-to-buy-a-laptop-in-two-charts-1767247363
 https://www.techradar.com/news/mobile-computing/laptops/best-laptops-1304361
 https://medium.freecodecamp.org/how-to-choose-a-laptop-for-programming-a9e36f8b4cfe
 https://laptopunderbudget.com/best-laptops-for-programming/
+https://www.quora.com/What-are-the-specifications-a-programmer-should-look-for-when-buying-a-new-laptop
 --------------
 
 https://github.com/jhuckaby/webcamjs
