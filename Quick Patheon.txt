@@ -1557,3 +1557,9 @@ https://www.mtgsalvation.com/forums/the-game/casual-multiplayer-formats/790378-6
 
 http://tappedout.net/mtg-decks/commander-building-choosing-the-correct-ramp-pack/
 
+https://afsinka.wordpress.com/2015/12/20/angularjs-java-servlet-post-request-example/
+http://www.doublecloud.org/2013/09/angular-javascript-framework-interacting-with-java-servlet-backend/
+https://www.simplecodestuffs.com/angularjs-interacting-with-java-servlet-using-json/
+https://medium.com/@swhp/build-single-page-application-with-java-ee-and-angularjs-4eaacbdfcd
+
+
