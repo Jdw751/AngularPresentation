@@ -1,0 +1,14 @@
+Wild Mongrel
+ Discard a card: Wild Mongrel gets +1/+1 and becomes the color of your choice until end of turn.
+
+ -It teaches you to play dead.-
+
+Basking Rootwalla
+ {1}{G}: Basking Rootwalla gets +2/+2 until end of turn. Activate this ability only once each turn.
+
+Madness {0} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)
+
+Generous Stray
+When Generous Stray enters the battlefield, draw a card.
+
+-Cats place their gifts with care, so that a bare foot will step on them in the middle of the night.-
